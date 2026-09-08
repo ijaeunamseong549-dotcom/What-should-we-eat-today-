@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍊 오늘 뭐 먹지?
 
-## Getting Started
+> 대학생을 위한 예산·음식 카테고리 기반 식사 추천 웹 서비스
 
-First, run the development server:
+매일 어떤 음식을 먹을지 고민하는 대학생들을 위해  
+예산과 음식 카테고리를 선택하면 조건에 맞는 메뉴를 추천해주는 웹 서비스입니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 프로젝트 소개
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+대학생들은 식사를 선택할 때 가격과 음식 종류 등을 고려해야 하지만,
+매번 메뉴를 선택하는 데 어려움을 겪습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**오늘 뭐 먹지?**는 사용자가 원하는 예산과 음식 카테고리를 선택하면
+조건에 맞는 음식을 추천하여 메뉴 선택을 쉽게 할 수 있도록 제작한 프로젝트입니다.
 
-## Learn More
+또한 사용자가 직접 음식을 등록하고 사진을 추가할 수 있으며,
+식사 가이드, 음식 후기, 맛집 지도 등의 기능을 제공합니다.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 프로젝트 목표
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 대학생이 쉽게 식사 메뉴를 선택할 수 있도록 지원
+- 예산에 맞는 음식 추천
+- 음식 카테고리별 메뉴 제공
+- 직접 음식 메뉴를 등록할 수 있는 기능 제공
+- 음식 후기와 맛집 정보를 한 곳에서 확인할 수 있도록 구성
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ 기술 스택
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Frontend
+
+- Next.js
+- TypeScript
+- React
+- CSS
+
+### Data
+
+- localStorage
+
+### Development
+
+- Visual Studio Code
+- Git
+- GitHub
+
+---
+
+## ✨ 주요 기능
+
+### 1. 🍽️ 음식 추천
+
+사용자가 예산과 음식 카테고리를 선택하면 조건에 맞는 음식을 추천합니다.
+
+#### 예산
+
+- 5,000원
+- 8,000원
+- 10,000원
+- 15,000원
+
+#### 음식 카테고리
+
+- 한식
+- 중식
+- 일식
+- 양식
+- 분식
+- 디저트
+
+추천 조건은 다음과 같습니다.
+
+```text
+음식 가격 <= 사용자가 선택한 예산
+AND
+음식 카테고리 == 사용자가 선택한 카테고리
